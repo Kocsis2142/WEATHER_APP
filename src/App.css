@@ -1,0 +1,84 @@
+body {
+  background-image: url('./images/bg-pic.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.warn-box {
+  display: flex;
+  justify-content: center;
+  height: 0;
+}
+
+.warning-msg {
+  color: #9F6000;
+  background-color: #FEEFB3;
+  margin: 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+  position: absolute;
+  top: -50px;
+  animation-name: warnmsg;
+  animation-duration: 5s;
+}
+
+@keyframes warnmsg {
+  0%   {top: -50px;}
+  25%  {top: 0;}
+  50%  {top: 0;}
+  75%  {top: 0;}
+  100% {top: -50px;}
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(184, 184, 184); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(160, 160, 160); 
+}
+
+.Styled-Button {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgba(50, 50, 50);
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  border-radius: 2.5px;
+}
+
+.Styled-Button:hover {
+  background-color: rgb(150, 150, 150);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: unset;
+    background: #E0EAFC;
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+  }
+}
+
+

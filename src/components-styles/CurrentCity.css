@@ -1,0 +1,28 @@
+.CurrentCity-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 2.5px;
+    max-width: 880px;
+    height: 480px;
+    background-size: cover;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.CurrentCity-inner-card {
+    padding: 25px 100px 25px 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2.5px;
+}
+
+@media screen and (max-width: 900px) {
+    .CurrentCity-card {
+       margin: 0 10px 0 10px;
+    }
+    .CurrentCity-inner-card {
+        margin: 5px;
+        padding: 25px;
+    }
+  }
