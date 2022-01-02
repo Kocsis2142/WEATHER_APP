@@ -9,14 +9,6 @@ Javascript, React.js, CSS
 npm install
 npm start
 
-## backend
-npm install
-node start.js
-
 Used APIs: 
 https://openweathermap.org/api/	- maximum 60 calls/minute
 https://www.pexels.com/api/	- maximum 200 calls/hour
-
-
-
-
