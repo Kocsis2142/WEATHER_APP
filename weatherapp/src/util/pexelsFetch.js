@@ -7,10 +7,10 @@ export const pexelsPhotoFetch = (cityName, setter) => {
     client.photos.search({ query, per_page: 5 })
     .then(photos => 
         setter(
-            photos.photos[Math.floor(Math.random() * 5)]?.src?.original !== undefined ?
-            photos.photos[Math.floor(Math.random() * 5)].src.original : 
-            photos.photos[0]?.src?.original ?
-            photos.photos[0].src.original :
+            photos.photos[Math.floor(Math.random() * 5)]?.src?.large !== undefined ?
+            photos.photos[Math.floor(Math.random() * 5)].src.large : 
+            photos.photos[0]?.src?.large ?
+            photos.photos[0].src.large :
             weatherStockPic))
     .catch(err => {
         console.log(err)
